@@ -1,0 +1,19 @@
+.mambaText{
+    color: white;
+    font-size: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a i{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 40px;
+}
