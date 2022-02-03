@@ -1,0 +1,16 @@
+ul li a{
+    color: white;
+    font-size: large;
+    padding-right: 20px;
+    transition: 3s;
+}
+
+ul li a:hover{
+    color: rgb(226, 226, 226);
+    text-decoration: underline 3px;
+    transform: translateY(5px);
+}
+
+.navbar navbar-expand-lg{
+    opacity: 0.1;
+}
