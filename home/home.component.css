@@ -1,0 +1,108 @@
+.hero {
+  width: auto;
+  height: 95vh;
+  background-image: url(../../assets/images/hero.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+}
+
+.btn-outline-light {
+  transition: linear 1.5s;
+}
+
+.btn-outline-light:hover {
+  letter-spacing: 5px;
+  font-weight: bold;
+
+}
+
+.social {
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a i {
+  padding: 10px;
+  color: white;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.yazi {
+  font-size: 90px;
+}
+
+.icon {
+  font-size: 20px;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 971px) {
+  .hero-text {
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 990px) {
+  .word {
+    margin-top: 10;
+    word-spacing: 0px;
+  }
+
+}
+.aaa {
+  margin-top: 70px;
+  box-shadow: rgb(112, 112, 112) 10px -10px;
+
+}
+
+.place {
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.hero2 {
+  background-color: #f7f7f7;
+}
+
+
+.imgBox {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.imgBox:hover{
+  transform: perspective(800px);
+}
+
+.word {
+  margin-top: 150px;
+  word-spacing: 15px;
+}

@@ -1,0 +1,86 @@
+<div class="hero">
+  <div class="hero-text">
+    <h1 class="yazi">Mamba Food</h1>
+    <h3 class="mt-lg-4">This is So Delicious</h3>
+    <button class="btn btn-outline-light w-50 mt-lg-4" routerLink="menu">MENU</button>
+  </div>
+  <div class="social icon">
+    <a href=""> <i class="bi bi-meta"></i></a>
+    <a href=""> <i class="bi bi-instagram"></i></a>
+    <a href=""> <i class="bi bi-pinterest"></i></a>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../assets/images/foto.png" class="img-fluid img-thumbnail aaa">
+    </div>
+    <div class="col-md-2 kaybol"></div>
+    <div class="col-md-4 place text-start">
+      <h1>Memories <br> made in food</h1>
+      <p>Our eclectic menu reflects the wide variety of influences and experiences that inform our approach to cooking.
+        We don’t just serve dishes, we serve memories. </p>
+      <button class="btn btn-outline-secondary" type="submit">Learn More</button>
+    </div>
+  </div>
+</div>
+
+<section class="hero2 mt-5 mb-5">
+  <div class="container mt-lg-5">
+    <div class="row">
+      <h1 class="text-center text-dark mt-lg-5">Popular dishes</h1>
+      <div class="col-md-6 mt-lg-5 p-lg-5" *ngFor="let item of foodData">
+        <img src="{{ item.foodImg }}" class="img-fluid img-thumbnail imgBox border-0 ">
+        <h3 class="text-start mt-3">{{item.foodName}} <span class="float-end">{{item.foodPrice | currency:'EUR'}}</span>
+        </h3>
+        <p>{{item.foodAbout}}</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 mt-lg-5">
+      <h1 class="float-start mt-lg-5 align-middle">Great food for the whole family</h1>
+      <p class="text-start">Some of the best memories revolve around good food and family – that's why we welcome all of
+        your loved ones,
+        including children. We have dedicated family seating section towards the back of the restaurant. </p>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+      <img src="../../assets/images/kids1.png" class="img-fluid img-thumbnail">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../assets/images/kid2.png" class="img-fluid img-thumbnail">
+    </div>
+    <div class="col-md-5 mt-lg-5">
+      <h1 class="float-start mt-lg-5 align-middle">We are here to lighten up your evening</h1>
+      <p class="text-start">All of our waiters have worked in our kitchen, meaning that they know the menu inside out
+        and can help you, whether you need to check for allergens or need a hand for picking the right kind of wine.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 mt-lg-5">
+      <h1 class="float-start mt-lg-5 align-middle">We welcome your animal friends</h1>
+      <p class="text-start">Our restaurant is pet-friendly, meaning that you can bring your furry friends with you. We
+        ask for calm and collected behavior from all of our animal customers.</p>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+      <img src="../../assets/images/kid3.png" class="img-fluid img-thumbnail">
+    </div>
+  </div>
+</div>
