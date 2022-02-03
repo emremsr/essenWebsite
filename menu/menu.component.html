@@ -1,0 +1,53 @@
+<div class="hero">
+  <div class="hero-text">
+    <h1 class="yazi">Mamba Food</h1>
+    <h3 class="mt-lg-4">Our Menu</h3>
+  </div>
+  <div class="social icon">
+    <a href=""> <i class="bi bi-meta"></i></a>
+    <a href=""> <i class="bi bi-instagram"></i></a>
+    <a href=""> <i class="bi bi-pinterest"></i></a>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <p class="mt-5 text-center pTitel">Starters</p>
+    <div class="col-md-6 mt-lg-5 p-lg-5" *ngFor="let item of menuOrder">
+      <img class="img-fluid img-thumbnail imgBox border-0" src="{{ item.foodImg }}">
+      <h3 class="text-start mt-3">{{item.foodName}} <span class="float-end">{{item.foodPrice | currency:'EUR'}}</span>
+      </h3>
+      <p class="mt-5"> {{item.foodAbout}} </p>
+    </div>
+
+  </div>
+</div>
+
+<section style="background-color: rgb(238, 238, 238);">
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <p class="mt-5 text-center pTitel">Hot Dish</p>
+      <div class="col-md-6 mt-lg-5 p-lg-5" *ngFor="let item of essenOrder">
+        <img class="img-fluid img-thumbnail imgBox border-0" src="{{ item.essenImg }}">
+        <h3 class="text-start mt-3">{{item.essenName}} <span
+            class="float-end">{{item.essenPrice | currency:'EUR'}}</span>
+        </h3>
+        <p class="mt-5"> {{item.essenAbout}} </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <p class="mt-5 text-center pTitel">Drinks</p>
+    <div class="col-md-6 mt-lg-5 p-lg-5" *ngFor="let item of drinkOrder">
+      <img class="img-fluid img-thumbnail imgBox border-0" src="{{ item.drinkImg }}">
+      <h3 class="text-start mt-3">{{item.drinkName}} <span class="float-end">{{item.drinkPrice | currency:'EUR'}}</span>
+      </h3>
+      <p class="mt-5"> {{item.drinkAbout}} </p>
+    </div>
+
+  </div>
+</div>
